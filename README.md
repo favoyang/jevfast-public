@@ -10,6 +10,4 @@ Public demos, code, screenshots and creator posts help us assess a submission. E
 
 All issues are public. Do not include API keys, private files or personal contact details. Only link media you have permission to share.
 
-Daily automated intake is planned but is not active yet. Once available, submissions will be checked for duplicates and qualification before entering the processing pipeline. Opening an issue does not automatically publish it on Jevfast.
-
 Please use issues for submissions. Pull requests are not the submission workflow.

@@ -53,7 +53,7 @@ body:
       label: How often does Jev run?
       options:
         - Unknown
-        - Realtime or near realtime
+        - Realtime or nearly
         - On demand or infrequently
       default: 0
   - type: textarea
