@@ -1,0 +1,63 @@
+name: Submit a Jev project
+description: Suggest a creative use of Jev for jevfast.com.
+title: "[Submission] "
+body:
+  - type: markdown
+    attributes:
+      value: "Suggest your own project or someone else's. Issues are public; do not include secrets or private information. Submission does not guarantee inclusion."
+  - type: input
+    id: project-name
+    attributes:
+      label: Project name
+      placeholder: Name of the project
+    validations:
+      required: true
+  - type: input
+    id: source-url
+    attributes:
+      label: Primary public URL
+      description: Link to the GitHub repository, X post, or project website.
+      placeholder: https://
+    validations:
+      required: true
+  - type: textarea
+    id: jev-use
+    attributes:
+      label: How does it use Jev?
+      description: Briefly describe what it does, Jev's role, and what makes it interesting.
+    validations:
+      required: true
+  - type: dropdown
+    id: evidence
+    attributes:
+      label: Available evidence
+      options:
+        - Idea only
+        - Demo
+        - Code available
+    validations:
+      required: true
+  - type: input
+    id: creator
+    attributes:
+      label: Creator credit
+      description: Public name, handle, or profile URL, if known.
+  - type: textarea
+    id: supporting-links
+    attributes:
+      label: Demo, code, or media links
+      description: Optional public links to a working demo, repository, video, image, or creator post.
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does Jev run?
+      options:
+        - Unknown
+        - Realtime or near realtime
+        - On demand or infrequently
+      default: 0
+  - type: textarea
+    id: frequency-evidence
+    attributes:
+      label: Frequency evidence
+      description: Optional source or measurement for actual Jev calls. Animation speed and model response latency alone do not establish call frequency.
