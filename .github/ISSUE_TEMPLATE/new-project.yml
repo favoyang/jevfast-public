@@ -1,22 +1,23 @@
-name: Submit a Jev project
-description: Suggest a creative use of Jev for jevfast.com.
+name: Submit a Jev project or video
+description: Suggest a creative Jev project or substantive video for jevfast.com.
 title: "[Submission] "
 body:
   - type: markdown
     attributes:
-      value: "Suggest your own project or someone else's. Issues are public; do not include secrets or private information. Submission does not guarantee inclusion."
+      value: "Suggest your own project or someone else's. Check the [Candidates list](https://jevfast.com/submit/#candidates) first and do not resubmit an item already shown there. Issues are public; do not include secrets or private information. Inclusion is not guaranteed."
   - type: input
     id: project-name
     attributes:
-      label: Project name
-      placeholder: Name of the project
+      label: Project or video name
+      description: The name can be the title of a video.
+      placeholder: Name or title
     validations:
       required: true
   - type: input
     id: source-url
     attributes:
       label: Primary public URL
-      description: Link to the GitHub repository, X post, or project website.
+      description: Link to the GitHub repository, X post, project website, or video.
       placeholder: https://
     validations:
       required: true
@@ -24,7 +25,7 @@ body:
     id: jev-use
     attributes:
       label: How does it use Jev?
-      description: Briefly describe what it does, Jev's role, and what makes it interesting.
+      description: Briefly describe what it does, Jev's role, and what makes it interesting. For a video, explain what it teaches or demonstrates about Jev.
     validations:
       required: true
   - type: dropdown
@@ -46,7 +47,7 @@ body:
     id: supporting-links
     attributes:
       label: Demo, code, or media links
-      description: Optional public links to a working demo, repository, video, image, or creator post.
+      description: Optional public links to a working demo, repository, video, image, or creator post. Choose Demo above when the primary evidence is a playable video.
   - type: dropdown
     id: frequency
     attributes:
